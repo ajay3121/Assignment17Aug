@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+    <style>
+        body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: lightblue;
+}
+.register-page{
+    position: absolute;
+    left: 30%;
+    top: 30%;
+    width: 300px;
+    height: 500px;
+    background: white;
+    border-radius: 10px;
+    border: 1px solid black;
+    justify-content:center;
+}
+table{
+padding:20px;
+}
+.header{
+    text-align: center;
+}
+
+
+    </style>
+</head>
+<body>
+<body>
+<div class="register-page">
+    <h4 class="header">Register</h4>
+    <form>
+        <table>
+            <tr>
+                <label id = "firstname">firstname</label>
+                <input id="firstname" type="text" placeholder="First Name"><br>
+            </tr>
+            <tr>
+                <label id = "lasname">lastname</label>
+                <input id="lastname" type="text" placeholder="Last Name"><br>
+            </tr>
+            <tr>
+                <label id = "mobile">mobile</label>
+                <input id="mobile" type="tel" placeholder="mobile"><br>
+            </tr>
+            <tr>
+                <label id = "email">email</label>
+                <input id="email" type="email" placeholder="abc@xyz.com"><br>
+            </tr>
+            <tr>
+                <label id = "dateofbirth">Date of Birth</label>
+                <input id="dateofbirth" type="date"><br>
+            </tr>
+            <tr>
+                <label id = "password">Password</label>
+                <input id="password" type="password" placeholder="****"><br>
+            </tr>
+            <tr>
+                <select id="country">
+                    <option value="none" selected disabled hidden>Country</option>
+                    <option value="India">India</option>
+                    <option value="USA">USA</option>
+                </select>
+            </tr>
+            <tr>
+                <div class="qualification">
+                    Qualifications
+                    <input type="checkbox" value="BTech">BTech
+                    <input type="checkbox" value="BCom" checked>BCom
+                    <input type="checkbox" value="MTech">MTech<br>
+                </div>
+            </tr>
+            <tr>
+                <div class="gender">
+                    Gender
+                    <input type="radio" value="Male" name="radio">Male
+                    <input type="radio" value="Female" name="radio">Female<br>
+                </div>
+            </tr>
+
+            <tr>
+                <input class="submit" type="submit" value="Submit">
+                <input class="reset" type="button" value="Reset">
+            </tr>
+        </table>
+    </form>
+</div>
+
+
+</body>
+</body>
+</html>
