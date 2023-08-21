@@ -1,0 +1,15 @@
+
+
+
+
+ 1) select emp_no,emp_name,emp_salary,d.deptno,dept_name,dept_manager,city,state from employee e join department d on e.deptno = d.deptno join address a on d.address_id = a.address_id;
+
+
+2) create table bank_account(acc_no int primary key,acc_opened_date date,status char,balance int);
+2) create table transaction(acc_no int,trans_type char,trans_date date,trans_amount int,foreign key(acc_no) references bank_account(acc_no));
+
+
+
+
+
+3 (i)  select sum(emp_sal),department,manager_name from employee group by department,manager_name;
