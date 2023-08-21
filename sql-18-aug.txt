@@ -1,0 +1,17 @@
+create database SQL_test;
+use SQL_test;
+Ass-I
+create table dept(dept_no int primary key, dept_name text, dept_location text);
+create table employee (emp_no int primary key,
+     emp_name varchar(50),
+     emp_age int check (emp_age >= 18),
+     emp_gender char(1) check (emp_gender in ('M', 'F')),
+     dept_no int,
+     foreign key (dept_no) references dept(dept_no) on delete cascade
+);
+Ass-II
+create table course(course_id int, course_name text, faculty text, join_date date);
+create table Coursecopy as select * from course;
+alter table course add(course_fee double, course_duration int);
+alter table course drop column join_date, drop column course_duration;
+alter table course rename column course_fee to fee;
